@@ -8,5 +8,5 @@ public record ClienteRequestDTO (String nome,
                                  String cpf,
                                  @Nullable EnderecoRequestDTO endereco,
                                  double rendaMensal,
-                                 String dataVencimentoFatura){
+                                 Integer dataVencimentoFatura){
 }
