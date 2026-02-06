@@ -31,6 +31,17 @@ public class CartaoDomain {
 
     public CartaoDomain(String numeroCartao, LocalDate dataExpiracao, String cvv, double limiteCredito,
                         ClienteDomain cliente, LocalDate ultimaAlteracaoLimite, Integer dataVencimentoFatura) {
+        this.numero = numeroCartao;
+        this.dataExpiracao = dataExpiracao;
+        this.cvv = cvv;
+        this.limite = limiteCredito;
+        this.ultimaAlteracaoLimite = ultimaAlteracaoLimite;
+        this.dataVencimentoFatura = dataVencimentoFatura;
+        this.cliente = cliente;
+    }
+
+    public CartaoDomain (Integer dataVencimentoFatura) {
+        this.dataVencimentoFatura = dataVencimentoFatura;
     }
 
     public Long getId() {
